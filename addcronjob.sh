@@ -7,5 +7,4 @@ then
 else
 	echo "$CRONTIME root /root/wakeup.sh >/dev/null 2>&1" > /etc/cron.d/wakeup
 fi
-
-cat /dev/null
+ping -i 1800 localhost
