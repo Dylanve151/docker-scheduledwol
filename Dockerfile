@@ -10,4 +10,4 @@ ENV MAC_ADDRESS 00:00:00:00:00:00
 COPY addcronjob.sh .
 COPY wakeup.sh .
 RUN chmod 755 *.sh
-CMD [ "addcronjob.sh;" "bash" ]
+CMD [ "addcronjob.sh" ]
