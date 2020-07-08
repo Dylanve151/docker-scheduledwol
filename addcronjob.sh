@@ -5,5 +5,5 @@ if [ -z "$CRONTIME" ]
 then
 	echo "No Crontime"
 else
-	echo "$CRONTIME root /root/wakeup.sh >/dev/null 2>&1" >> /etc/crontab
+	echo "$CRONTIME root /root/wakeup.sh >/dev/null 2>&1" > /etc/cron.d/wakeup
 fi
