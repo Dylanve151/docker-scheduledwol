@@ -11,4 +11,4 @@ COPY addcronjob.sh .
 COPY wakeup.sh .
 RUN chmod 755 *.sh
 RUN ./addcronjob.sh
-CMD [ "bash" ]
+CMD [ "addcronjob.sh;" "bash" ]
