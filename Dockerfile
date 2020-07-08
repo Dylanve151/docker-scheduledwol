@@ -7,5 +7,5 @@ WORKDIR /root
 COPY addcronjob.sh .
 COPY wakeup.sh .
 RUN chmod 755 *.sh
-RUN sh addcronjob.sh
+RUN addcronjob.sh
 CMD [ "bash" ]
