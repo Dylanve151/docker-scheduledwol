@@ -7,9 +7,9 @@ required BROADCAST_IP = Broadcast ip of your network. (usually ends with 255 for
 
 required MAC_ADDRESS = Mac address of PC you want to wake up (Format: "00:00:00:00:00:00").
 
-required CRONTIME = Set the time in CRONTAB to schedule the wakeup. (Example: "0 12 * * *" starts script everyday on 12:00).
+required CRONTIME = Set the time in CRONTAB to schedule the wakeup script. (Example: "0 12 * * *" starts wakeup script everyday on 12:00).
 
-optional TRIGGER_IP = set a IP to trigger wakeup when it this IP comes online (I used my phone ipaddres for Example: "192.168.1.150").
+optional TRIGGER_IP = Set a IP to trigger when it this IP comes online while wakeup script is active (I used my phone ipaddres for Example: "192.168.1.150").
 
 
 ## Example of CRONTIME definition:
