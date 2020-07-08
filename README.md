@@ -1,7 +1,8 @@
 # docker-scheduledwol
-
+deploy:
+```
 docker run --name="Scheduled-WOL" --restart="always" --volume="/etc/localtime:/etc/localtime:ro" --network="host"  dylanve115/scheduledwol
-
+```
 ## Environment variables:
 required BROADCAST_IP = Broadcast ip of your network. (usually ends with 255 for Example: "192.168.1.255").
 
