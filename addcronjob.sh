@@ -5,7 +5,7 @@ if [ -z "$CRONTIME" ]
 then
 	echo "No Crontime"
 else
-	echo "$CRONTIME root /root/wakeup.sh >> log.log" > /etc/cron.d/wakeup
+	echo "$CRONTIME root /root/wakeup.sh >> /root/log.log" > /etc/cron.d/wakeup
 	echo "" > /etc/cron.d/wakeup
 fi
 service cron start
