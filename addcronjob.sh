@@ -8,5 +8,5 @@ else
 	echo "$CRONTIME root /root/wakeup.sh >>" > /etc/cron.d/wakeup
 	echo "" > /etc/cron.d/wakeup
 fi
-service start cron
+service cron start
 ping -i 1800 localhost
