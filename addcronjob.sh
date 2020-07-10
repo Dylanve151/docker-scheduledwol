@@ -16,4 +16,4 @@ else
 	echo "$TRIGGER_IP" > TRIGGER_IP
 fi
 service cron start
-tail -f log.log
+tail -f log.log -n 1
