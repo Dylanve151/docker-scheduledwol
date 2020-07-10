@@ -9,12 +9,12 @@ else
 	echo "" >> /etc/cron.d/wakeup
 fi
 echo "$BROADCAST_IP" > BROADCAST_IP
-echo "$MAC_ADDRESS" >> MAC_ADDRESS
+echo "$MAC_ADDRESS" > MAC_ADDRESS
 if [ -z "$TRIGGER_IP" ]
 then
 	echo "No Trigger IP"
 else
-	echo "$TRIGGER_IP" >> TRIGGER_IP
+	echo "$TRIGGER_IP" > TRIGGER_IP
 fi
 service cron start
 tail -f /root/log.log
