@@ -1,3 +1,6 @@
+#!/bin/bash
+#startup script
+
 echo "$BROADCAST_IP" > BROADCAST_IP
 echo "$MAC_ADDRESS" > MAC_ADDRESS
 if [ -z "$TRIGGER_IP" ]
