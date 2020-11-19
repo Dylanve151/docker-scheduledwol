@@ -1,8 +1,10 @@
 #!/bin/bash
 #startup script
 
-echo "$BROADCAST_IP" > BROADCAST_IP
-echo "$MAC_ADDRESS" > MAC_ADDRESS
+bash /root/addcronjob.sh
+
+echo "$BROADCAST_IP" > /verbs/BROADCAST_IP
+echo "$MAC_ADDRESS" > /verbs/MAC_ADDRESS
 if [ -z "$TRIGGER_IP" ]
 then
 	echo "No Trigger IP" >> log.log
