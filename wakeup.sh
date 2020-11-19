@@ -1,9 +1,9 @@
 #!/bin/bash
 #WOL
 
-BROADCAST_IP=$(cat BROADCAST_IP)
-MAC_ADDRESS=$(cat MAC_ADDRESS)
-TRIGGER_IP=$(cat TRIGGER_IP)
+BROADCAST_IP=$(cat /verbs/BROADCAST_IP)
+MAC_ADDRESS=$(cat /verbs/MAC_ADDRESS)
+TRIGGER_IP=$(cat /verbs/TRIGGER_IP)
 
 echo "wakeup.sh script started" >> log.log
 if [ -z "$TRIGGER_IP" ]
