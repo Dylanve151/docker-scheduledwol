@@ -12,4 +12,5 @@ COPY addcronjob.bash .
 COPY wakeup.bash .
 RUN touch log.log
 RUN chmod 755 *.sh
+RUN chmod 755 *.bash
 CMD [ "./startup.sh" ]
