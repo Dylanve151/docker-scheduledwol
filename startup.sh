@@ -1,7 +1,7 @@
 #!/bin/bash
 #startup script
 
-bash /root/addcronjob.sh
+bash /root/addcronjob.bash
 
 echo "$BROADCAST_IP" > /verbs/BROADCAST_IP
 echo "$MAC_ADDRESS" > /verbs/MAC_ADDRESS
