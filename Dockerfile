@@ -3,6 +3,7 @@ RUN apt-get update && apt-get install -y \
   wakeonlan \
   cron \
   && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+RUN mkdir /verbs
 WORKDIR /root
 ENV BROADCAST_IP 192.168.1.255
 ENV CRONTIME 0 12 * * *
