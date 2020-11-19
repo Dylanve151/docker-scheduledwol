@@ -9,7 +9,7 @@ if [ -z "$TRIGGER_IP" ]
 then
 	echo "No Trigger IP" >> log.log
 else
-	echo "$TRIGGER_IP" > TRIGGER_IP
+	echo "$TRIGGER_IP" > /verbs/TRIGGER_IP
 fi
 service cron start
 tail -f log.log
