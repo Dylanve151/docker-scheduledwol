@@ -12,4 +12,4 @@ else
 	echo "$TRIGGER_IP" > /verbs/TRIGGER_IP
 fi
 service cron start
-tail -f log.log
+tail -fn0 log.log
